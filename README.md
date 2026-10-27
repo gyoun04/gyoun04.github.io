@@ -34,8 +34,8 @@ CLANG_MODULE_CACHE_PATH=/tmp/portfolio-swift-cache swift -module-cache-path /tmp
 
 ## 배포
 
-저장소: https://github.com/gyoun04/gyon04.github.io
+저장소: https://github.com/gyoun04/gyoun04.github.io
 
-GitHub Pages 주소: https://gyoun04.github.io/gyon04.github.io/
+GitHub Pages 주소: https://gyoun04.github.io/
 
 저장소 Settings → Pages에서 main 브랜치의 /(root)를 배포하도록 설정합니다. 모든 리소스는 상대 경로를 사용합니다.
