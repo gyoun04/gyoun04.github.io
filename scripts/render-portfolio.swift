@@ -26,7 +26,13 @@ for index in 0..<document.pageCount {
         context.setFillColor(CGColor(gray: 1, alpha: 1))
         context.fill(rect)
         context.interpolationQuality = .high
-        context.concatenate(source.getDrawingTransform(.mediaBox, rect: rect, rotate: 0, preserveAspectRatio: true))
+        // Explicit scaling is required: getDrawingTransform may only center an
+        // unscaled PDF page when the destination is larger than the page.
+        let scale = min(CGFloat(width) / bounds.width, CGFloat(height) / bounds.height)
+        context.translateBy(x: (CGFloat(width) - bounds.width * scale) / 2,
+                            y: (CGFloat(height) - bounds.height * scale) / 2)
+        context.scaleBy(x: scale, y: scale)
+        context.translateBy(x: -bounds.minX, y: -bounds.minY)
         context.drawPDFPage(source)
         guard let image = context.makeImage(),
             let destination = CGImageDestinationCreateWithURL(output.appendingPathComponent("\(name)-\(width).jpg") as CFURL,
