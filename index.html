@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="gyoun04 디자인 포트폴리오 — Figma 링커리어 메인 화면 시안 구현">
+<title>LINKAREER — UI 디자인 포트폴리오</title>
+<link rel="stylesheet" href="./css/style.css"><script src="./js/main.js" defer></script>
+</head>
+<body id="top">
+<a class="skip-link" href="#main">본문 바로가기</a>
+<header>
+  <div class="utility-bar">
+    <a class="brand-small" href="#top"><span class="brand-symbol">L</span> 링커리어</a>
+    <span class="utility-divider" aria-hidden="true"></span><a href="#compare">링커리어 STEM</a>
+    <button class="login" data-demo="로그인 / 회원가입">로그인 / 회원가입</button>
+  </div>
+  <div class="search-header container">
+    <h1><a href="#top">LINKAREER</a></h1>
+    <form id="search-form" role="search">
+      <label class="sr-only" for="search-input">공고 검색</label>
+      <input id="search-input" type="search" placeholder="인턴 / 채용정보 / 기업명 / 직무명을 검색해보세요">
+      <button class="search-button" aria-label="검색"><svg viewBox="0 0 32 32" aria-hidden="true"><circle cx="14" cy="14" r="9"/><path d="m21 21 7 7"/></svg></button>
+    </form>
+  </div>
+  <nav class="main-nav" aria-label="메인 메뉴">
+    <div class="nav-inner container">
+      <a href="#jobs">채용/인턴</a><button data-demo="대외활동/공모전">대외활동/공모전</button><button data-demo="게시판">게시판</button><button data-demo="자기소개서">자기소개서</button><button data-demo="CTB">CTB</button>
+      <button id="menu-toggle" class="icon-button" aria-label="전체 메뉴" aria-expanded="false" aria-controls="expanded-menu"><svg viewBox="0 0 32 32" aria-hidden="true"><path d="M5 8h22M5 16h22M5 24h22"/></svg></button>
+    </div>
+    <div id="expanded-menu" class="expanded-menu container" hidden><a href="#jobs">마감 공고</a><a href="#schedule">일정 달력</a><a href="#compare">맞춤 공고 비교</a></div>
+  </nav>
+</header>
+<main id="main" class="container">
+  <section id="jobs" class="overview" aria-label="마감 공고 및 내 활동">
+    <div class="deadline-area">
+      <div class="segment" role="group" aria-label="공고 정렬"><button data-sort="deadline" aria-pressed="true">마감임박</button><button data-sort="new" aria-pressed="false">신규등록</button></div>
+      <div id="deadline-cards" class="deadline-cards"></div>
+      <p id="search-status" class="search-status" role="status"></p>
+    </div>
+    <aside class="my-panel" aria-label="내 활동 예시">
+      <h2>MY</h2>
+      <div class="my-shortcuts"><button data-demo="알림">알림 <span aria-hidden="true">♧</span></button><button data-demo="스크랩">스크랩 <span aria-hidden="true">♧</span></button><button data-demo="쪽지">쪽지 <span aria-hidden="true">♧</span></button><button data-demo="자소서">자소서 <span aria-hidden="true">▤</span></button></div>
+      <div class="my-progress"><span>작성 중 <b>3</b></span><span>지원 완료 <b>10</b></span><span>면접 <b>4</b></span><span>대기/발표 <b>2</b></span></div>
+    </aside>
+  </section>
+  <section id="schedule" class="schedule" aria-label="지원 일정 예시 달력">
+    <div class="calendar-toolbar"><button id="calendar-toggle" aria-expanded="true" aria-controls="calendar-panel">달력 숨기기</button><button class="icon-button calendar-icon" aria-label="일정 달력 표시 전환" aria-controls="calendar-panel" aria-expanded="true"><svg viewBox="0 0 32 32" aria-hidden="true"><rect x="5" y="7" width="22" height="21" rx="3"/><path d="M10 3v8M22 3v8M5 15h22M10 20h2m4 0h2m4 0h1M10 24h2m4 0h2"/></svg></button></div>
+    <div id="calendar-panel" class="calendar-scroll" tabindex="0" aria-label="일정 달력, 작은 화면에서는 좌우로 스크롤">
+      <div class="calendar"><div class="weekdays" aria-hidden="true"><span>SUN</span><span>MON</span><span>TUE</span><span>WED</span><span>THU</span><span>FRI</span><span>SAT</span></div><div id="calendar-days" class="calendar-days"></div></div>
+    </div>
+  </section>
+  <section id="compare" class="compare-section" aria-labelledby="compare-title">
+    <div class="compare-toolbar"><h2 id="compare-title">맞춤 공고 비교하기</h2><label class="difference-toggle">차이점만 보기 <input id="difference-only" type="checkbox" role="switch"><span class="switch-track" aria-hidden="true"></span></label><button class="icon-button" id="add-compare" aria-label="비교 공고 추가">＋</button></div>
+    <div class="compare-layout">
+      <div id="saved-jobs" class="saved-jobs" aria-label="저장한 공고 예시"></div>
+      <div class="comparison-scroll" tabindex="0" aria-label="공고 비교 표, 작은 화면에서는 좌우로 스크롤">
+        <table class="comparison-table">
+          <caption class="sr-only">카카오톡, 토스, 쿠팡 공고 비교 예시</caption>
+          <thead><tr><th scope="col" class="row-label"><span class="sr-only">비교 항목</span></th><th scope="col"><div class="company-preview"><span class="company-logo kakao">카카오톡</span><p>카카오톡 하반기 공채</p></div></th><th scope="col"><div class="company-preview"><span class="company-logo toss">toss</span><p>토스 2026 신입사원</p></div></th><th scope="col"><div class="company-preview"><span class="company-logo coupang">coupang</span><p>쿠팡 마케팅 팀원</p></div></th></tr></thead>
+          <tbody id="comparison-rows"></tbody>
+          <tfoot><tr><td></td><td><button data-demo="자소서 쓰기">자소서 쓰기</button><button data-demo="지원하기">지원하기</button></td><td><button data-demo="자소서 쓰기">자소서 쓰기</button><button data-demo="지원하기">지원하기</button></td><td><button data-demo="자소서 쓰기">자소서 쓰기</button><button data-demo="지원하기">지원하기</button></td></tr></tfoot>
+        </table>
+      </div>
+    </div>
+    <div class="compare-bottom"><button id="reset-compare" class="icon-button" aria-label="비교 설정 초기화">↻</button><span id="compare-status" role="status"></span></div>
+  </section>
+</main>
+<footer class="page-footer container"><p>gyoun04 · UI 디자인 포트폴리오 <span>Figma 시안 구현 · 공고와 일정은 디자인 예시입니다.</span></p><a href="#top">맨 위로 ↑</a></footer>
+<div id="toast" class="toast" role="status" aria-live="polite" hidden></div>
+<noscript><p class="noscript-note">공고·달력·비교 예시를 표시하려면 JavaScript를 켜주세요.</p></noscript>
+</body>
+</html>
