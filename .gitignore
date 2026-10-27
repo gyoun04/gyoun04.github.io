@@ -4,3 +4,6 @@ reference/
 
 # Local PDF source; website uses optimized page images.
 /*.pdf
+
+# Local PDF rendering and comparison previews.
+/tmp/pdfs/
