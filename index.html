@@ -1,72 +1,361 @@
 <!DOCTYPE html>
 <html lang="ko">
 <head>
-<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="description" content="gyoun04 디자인 포트폴리오 — Figma 링커리어 메인 화면 시안 구현">
-<title>LINKAREER — UI 디자인 포트폴리오</title>
-<link rel="stylesheet" href="./css/style.css"><script src="./js/main.js" defer></script>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="임가연의 디자인 포트폴리오. 작품과 작업 과정을 48페이지로 만나보세요.">
+  <meta name="theme-color" content="#ffffff">
+  <title>임가연 | Design Portfolio</title>
+  <link rel="stylesheet" href="./css/style.css">
+  <script src="./js/main.js" defer></script>
 </head>
 <body id="top">
-<a class="skip-link" href="#main">본문 바로가기</a>
-<header>
-  <div class="utility-bar">
-    <a class="brand-small" href="#top"><span class="brand-symbol">L</span> 링커리어</a>
-    <span class="utility-divider" aria-hidden="true"></span><a href="#compare">링커리어 STEM</a>
-    <button class="login" data-demo="로그인 / 회원가입">로그인 / 회원가입</button>
-  </div>
-  <div class="search-header container">
-    <h1><a href="#top">LINKAREER</a></h1>
-    <form id="search-form" role="search">
-      <label class="sr-only" for="search-input">공고 검색</label>
-      <input id="search-input" type="search" placeholder="인턴 / 채용정보 / 기업명 / 직무명을 검색해보세요">
-      <button class="search-button" aria-label="검색"><svg viewBox="0 0 32 32" aria-hidden="true"><circle cx="14" cy="14" r="9"/><path d="m21 21 7 7"/></svg></button>
-    </form>
-  </div>
-  <nav class="main-nav" aria-label="메인 메뉴">
-    <div class="nav-inner container">
-      <a href="#jobs">채용/인턴</a><button data-demo="대외활동/공모전">대외활동/공모전</button><button data-demo="게시판">게시판</button><button data-demo="자기소개서">자기소개서</button><button data-demo="CTB">CTB</button>
-      <button id="menu-toggle" class="icon-button" aria-label="전체 메뉴" aria-expanded="false" aria-controls="expanded-menu"><svg viewBox="0 0 32 32" aria-hidden="true"><path d="M5 8h22M5 16h22M5 24h22"/></svg></button>
-    </div>
-    <div id="expanded-menu" class="expanded-menu container" hidden><a href="#jobs">마감 공고</a><a href="#schedule">일정 달력</a><a href="#compare">맞춤 공고 비교</a></div>
+  <a class="skip-link" href="#portfolio">포트폴리오 바로가기</a>
+  <main id="portfolio" aria-labelledby="portfolio-title">
+    <h1 id="portfolio-title" class="sr-only">임가연 디자인 포트폴리오</h1>
+    <figure class="portfolio-page" id="page-1" aria-label="포트폴리오 1페이지">
+      <img src="./images/portfolio/page-01-1920.jpg"
+        srcset="./images/portfolio/page-01-960.jpg 960w, ./images/portfolio/page-01-1920.jpg 1920w"
+        sizes="(min-width: 1440px) 1440px, 100vw" width="1920" height="1369"
+        alt="임가연 디자인 포트폴리오 — 1 / 48페이지" fetchpriority="high" decoding="async">
+    </figure>
+    <figure class="portfolio-page" id="page-2" aria-label="포트폴리오 2페이지">
+      <img src="./images/portfolio/page-02-1920.jpg"
+        srcset="./images/portfolio/page-02-960.jpg 960w, ./images/portfolio/page-02-1920.jpg 1920w"
+        sizes="(min-width: 1440px) 1440px, 100vw" width="1920" height="1369"
+        alt="임가연 디자인 포트폴리오 — 2 / 48페이지" loading="lazy" decoding="async">
+    </figure>
+    <figure class="portfolio-page" id="page-3" aria-label="포트폴리오 3페이지">
+      <img src="./images/portfolio/page-03-1920.jpg"
+        srcset="./images/portfolio/page-03-960.jpg 960w, ./images/portfolio/page-03-1920.jpg 1920w"
+        sizes="(min-width: 1440px) 1440px, 100vw" width="1920" height="1369"
+        alt="임가연 디자인 포트폴리오 — 3 / 48페이지" loading="lazy" decoding="async">
+    </figure>
+    <figure class="portfolio-page" id="page-4" aria-label="포트폴리오 4페이지">
+      <img src="./images/portfolio/page-04-1920.jpg"
+        srcset="./images/portfolio/page-04-960.jpg 960w, ./images/portfolio/page-04-1920.jpg 1920w"
+        sizes="(min-width: 1440px) 1440px, 100vw" width="1920" height="1369"
+        alt="임가연 디자인 포트폴리오 — 4 / 48페이지" loading="lazy" decoding="async">
+    </figure>
+    <figure class="portfolio-page" id="page-5" aria-label="포트폴리오 5페이지">
+      <img src="./images/portfolio/page-05-1920.jpg"
+        srcset="./images/portfolio/page-05-960.jpg 960w, ./images/portfolio/page-05-1920.jpg 1920w"
+        sizes="(min-width: 1440px) 1440px, 100vw" width="1920" height="1369"
+        alt="임가연 디자인 포트폴리오 — 5 / 48페이지" loading="lazy" decoding="async">
+    </figure>
+    <figure class="portfolio-page" id="page-6" aria-label="포트폴리오 6페이지">
+      <img src="./images/portfolio/page-06-1920.jpg"
+        srcset="./images/portfolio/page-06-960.jpg 960w, ./images/portfolio/page-06-1920.jpg 1920w"
+        sizes="(min-width: 1440px) 1440px, 100vw" width="1920" height="1369"
+        alt="임가연 디자인 포트폴리오 — 6 / 48페이지" loading="lazy" decoding="async">
+    </figure>
+    <figure class="portfolio-page" id="page-7" aria-label="포트폴리오 7페이지">
+      <img src="./images/portfolio/page-07-1920.jpg"
+        srcset="./images/portfolio/page-07-960.jpg 960w, ./images/portfolio/page-07-1920.jpg 1920w"
+        sizes="(min-width: 1440px) 1440px, 100vw" width="1920" height="1369"
+        alt="임가연 디자인 포트폴리오 — 7 / 48페이지" loading="lazy" decoding="async">
+    </figure>
+    <figure class="portfolio-page" id="page-8" aria-label="포트폴리오 8페이지">
+      <img src="./images/portfolio/page-08-1920.jpg"
+        srcset="./images/portfolio/page-08-960.jpg 960w, ./images/portfolio/page-08-1920.jpg 1920w"
+        sizes="(min-width: 1440px) 1440px, 100vw" width="1920" height="1369"
+        alt="임가연 디자인 포트폴리오 — 8 / 48페이지" loading="lazy" decoding="async">
+    </figure>
+    <figure class="portfolio-page" id="page-9" aria-label="포트폴리오 9페이지">
+      <img src="./images/portfolio/page-09-1920.jpg"
+        srcset="./images/portfolio/page-09-960.jpg 960w, ./images/portfolio/page-09-1920.jpg 1920w"
+        sizes="(min-width: 1440px) 1440px, 100vw" width="1920" height="1369"
+        alt="임가연 디자인 포트폴리오 — 9 / 48페이지" loading="lazy" decoding="async">
+    </figure>
+    <figure class="portfolio-page" id="page-10" aria-label="포트폴리오 10페이지">
+      <img src="./images/portfolio/page-10-1920.jpg"
+        srcset="./images/portfolio/page-10-960.jpg 960w, ./images/portfolio/page-10-1920.jpg 1920w"
+        sizes="(min-width: 1440px) 1440px, 100vw" width="1920" height="1369"
+        alt="임가연 디자인 포트폴리오 — 10 / 48페이지" loading="lazy" decoding="async">
+    </figure>
+    <figure class="portfolio-page" id="page-11" aria-label="포트폴리오 11페이지">
+      <img src="./images/portfolio/page-11-1920.jpg"
+        srcset="./images/portfolio/page-11-960.jpg 960w, ./images/portfolio/page-11-1920.jpg 1920w"
+        sizes="(min-width: 1440px) 1440px, 100vw" width="1920" height="1369"
+        alt="임가연 디자인 포트폴리오 — 11 / 48페이지" loading="lazy" decoding="async">
+    </figure>
+    <figure class="portfolio-page" id="page-12" aria-label="포트폴리오 12페이지">
+      <img src="./images/portfolio/page-12-1920.jpg"
+        srcset="./images/portfolio/page-12-960.jpg 960w, ./images/portfolio/page-12-1920.jpg 1920w"
+        sizes="(min-width: 1440px) 1440px, 100vw" width="1920" height="1369"
+        alt="임가연 디자인 포트폴리오 — 12 / 48페이지" loading="lazy" decoding="async">
+    </figure>
+    <figure class="portfolio-page" id="page-13" aria-label="포트폴리오 13페이지">
+      <img src="./images/portfolio/page-13-1920.jpg"
+        srcset="./images/portfolio/page-13-960.jpg 960w, ./images/portfolio/page-13-1920.jpg 1920w"
+        sizes="(min-width: 1440px) 1440px, 100vw" width="1920" height="1369"
+        alt="임가연 디자인 포트폴리오 — 13 / 48페이지" loading="lazy" decoding="async">
+    </figure>
+    <figure class="portfolio-page" id="page-14" aria-label="포트폴리오 14페이지">
+      <img src="./images/portfolio/page-14-1920.jpg"
+        srcset="./images/portfolio/page-14-960.jpg 960w, ./images/portfolio/page-14-1920.jpg 1920w"
+        sizes="(min-width: 1440px) 1440px, 100vw" width="1920" height="1369"
+        alt="임가연 디자인 포트폴리오 — 14 / 48페이지" loading="lazy" decoding="async">
+    </figure>
+    <figure class="portfolio-page" id="page-15" aria-label="포트폴리오 15페이지">
+      <img src="./images/portfolio/page-15-1920.jpg"
+        srcset="./images/portfolio/page-15-960.jpg 960w, ./images/portfolio/page-15-1920.jpg 1920w"
+        sizes="(min-width: 1440px) 1440px, 100vw" width="1920" height="1369"
+        alt="임가연 디자인 포트폴리오 — 15 / 48페이지" loading="lazy" decoding="async">
+    </figure>
+    <figure class="portfolio-page" id="page-16" aria-label="포트폴리오 16페이지">
+      <img src="./images/portfolio/page-16-1920.jpg"
+        srcset="./images/portfolio/page-16-960.jpg 960w, ./images/portfolio/page-16-1920.jpg 1920w"
+        sizes="(min-width: 1440px) 1440px, 100vw" width="1920" height="1369"
+        alt="임가연 디자인 포트폴리오 — 16 / 48페이지" loading="lazy" decoding="async">
+    </figure>
+    <figure class="portfolio-page" id="page-17" aria-label="포트폴리오 17페이지">
+      <img src="./images/portfolio/page-17-1920.jpg"
+        srcset="./images/portfolio/page-17-960.jpg 960w, ./images/portfolio/page-17-1920.jpg 1920w"
+        sizes="(min-width: 1440px) 1440px, 100vw" width="1920" height="1369"
+        alt="임가연 디자인 포트폴리오 — 17 / 48페이지" loading="lazy" decoding="async">
+    </figure>
+    <figure class="portfolio-page" id="page-18" aria-label="포트폴리오 18페이지">
+      <img src="./images/portfolio/page-18-1920.jpg"
+        srcset="./images/portfolio/page-18-960.jpg 960w, ./images/portfolio/page-18-1920.jpg 1920w"
+        sizes="(min-width: 1440px) 1440px, 100vw" width="1920" height="1369"
+        alt="임가연 디자인 포트폴리오 — 18 / 48페이지" loading="lazy" decoding="async">
+    </figure>
+    <figure class="portfolio-page" id="page-19" aria-label="포트폴리오 19페이지">
+      <img src="./images/portfolio/page-19-1920.jpg"
+        srcset="./images/portfolio/page-19-960.jpg 960w, ./images/portfolio/page-19-1920.jpg 1920w"
+        sizes="(min-width: 1440px) 1440px, 100vw" width="1920" height="1369"
+        alt="임가연 디자인 포트폴리오 — 19 / 48페이지" loading="lazy" decoding="async">
+    </figure>
+    <figure class="portfolio-page" id="page-20" aria-label="포트폴리오 20페이지">
+      <img src="./images/portfolio/page-20-1920.jpg"
+        srcset="./images/portfolio/page-20-960.jpg 960w, ./images/portfolio/page-20-1920.jpg 1920w"
+        sizes="(min-width: 1440px) 1440px, 100vw" width="1920" height="1369"
+        alt="임가연 디자인 포트폴리오 — 20 / 48페이지" loading="lazy" decoding="async">
+    </figure>
+    <figure class="portfolio-page" id="page-21" aria-label="포트폴리오 21페이지">
+      <img src="./images/portfolio/page-21-1920.jpg"
+        srcset="./images/portfolio/page-21-960.jpg 960w, ./images/portfolio/page-21-1920.jpg 1920w"
+        sizes="(min-width: 1440px) 1440px, 100vw" width="1920" height="1369"
+        alt="임가연 디자인 포트폴리오 — 21 / 48페이지" loading="lazy" decoding="async">
+    </figure>
+    <figure class="portfolio-page" id="page-22" aria-label="포트폴리오 22페이지">
+      <img src="./images/portfolio/page-22-1920.jpg"
+        srcset="./images/portfolio/page-22-960.jpg 960w, ./images/portfolio/page-22-1920.jpg 1920w"
+        sizes="(min-width: 1440px) 1440px, 100vw" width="1920" height="1369"
+        alt="임가연 디자인 포트폴리오 — 22 / 48페이지" loading="lazy" decoding="async">
+    </figure>
+    <figure class="portfolio-page" id="page-23" aria-label="포트폴리오 23페이지">
+      <img src="./images/portfolio/page-23-1920.jpg"
+        srcset="./images/portfolio/page-23-960.jpg 960w, ./images/portfolio/page-23-1920.jpg 1920w"
+        sizes="(min-width: 1440px) 1440px, 100vw" width="1920" height="1369"
+        alt="임가연 디자인 포트폴리오 — 23 / 48페이지" loading="lazy" decoding="async">
+    </figure>
+    <figure class="portfolio-page" id="page-24" aria-label="포트폴리오 24페이지">
+      <img src="./images/portfolio/page-24-1920.jpg"
+        srcset="./images/portfolio/page-24-960.jpg 960w, ./images/portfolio/page-24-1920.jpg 1920w"
+        sizes="(min-width: 1440px) 1440px, 100vw" width="1920" height="1369"
+        alt="임가연 디자인 포트폴리오 — 24 / 48페이지" loading="lazy" decoding="async">
+    </figure>
+    <figure class="portfolio-page" id="page-25" aria-label="포트폴리오 25페이지">
+      <img src="./images/portfolio/page-25-1920.jpg"
+        srcset="./images/portfolio/page-25-960.jpg 960w, ./images/portfolio/page-25-1920.jpg 1920w"
+        sizes="(min-width: 1440px) 1440px, 100vw" width="1920" height="1369"
+        alt="임가연 디자인 포트폴리오 — 25 / 48페이지" loading="lazy" decoding="async">
+    </figure>
+    <figure class="portfolio-page" id="page-26" aria-label="포트폴리오 26페이지">
+      <img src="./images/portfolio/page-26-1920.jpg"
+        srcset="./images/portfolio/page-26-960.jpg 960w, ./images/portfolio/page-26-1920.jpg 1920w"
+        sizes="(min-width: 1440px) 1440px, 100vw" width="1920" height="1369"
+        alt="임가연 디자인 포트폴리오 — 26 / 48페이지" loading="lazy" decoding="async">
+    </figure>
+    <figure class="portfolio-page" id="page-27" aria-label="포트폴리오 27페이지">
+      <img src="./images/portfolio/page-27-1920.jpg"
+        srcset="./images/portfolio/page-27-960.jpg 960w, ./images/portfolio/page-27-1920.jpg 1920w"
+        sizes="(min-width: 1440px) 1440px, 100vw" width="1920" height="1369"
+        alt="임가연 디자인 포트폴리오 — 27 / 48페이지" loading="lazy" decoding="async">
+    </figure>
+    <figure class="portfolio-page" id="page-28" aria-label="포트폴리오 28페이지">
+      <img src="./images/portfolio/page-28-1920.jpg"
+        srcset="./images/portfolio/page-28-960.jpg 960w, ./images/portfolio/page-28-1920.jpg 1920w"
+        sizes="(min-width: 1440px) 1440px, 100vw" width="1920" height="1369"
+        alt="임가연 디자인 포트폴리오 — 28 / 48페이지" loading="lazy" decoding="async">
+    </figure>
+    <figure class="portfolio-page" id="page-29" aria-label="포트폴리오 29페이지">
+      <img src="./images/portfolio/page-29-1920.jpg"
+        srcset="./images/portfolio/page-29-960.jpg 960w, ./images/portfolio/page-29-1920.jpg 1920w"
+        sizes="(min-width: 1440px) 1440px, 100vw" width="1920" height="1369"
+        alt="임가연 디자인 포트폴리오 — 29 / 48페이지" loading="lazy" decoding="async">
+    </figure>
+    <figure class="portfolio-page" id="page-30" aria-label="포트폴리오 30페이지">
+      <img src="./images/portfolio/page-30-1920.jpg"
+        srcset="./images/portfolio/page-30-960.jpg 960w, ./images/portfolio/page-30-1920.jpg 1920w"
+        sizes="(min-width: 1440px) 1440px, 100vw" width="1920" height="1369"
+        alt="임가연 디자인 포트폴리오 — 30 / 48페이지" loading="lazy" decoding="async">
+    </figure>
+    <figure class="portfolio-page" id="page-31" aria-label="포트폴리오 31페이지">
+      <img src="./images/portfolio/page-31-1920.jpg"
+        srcset="./images/portfolio/page-31-960.jpg 960w, ./images/portfolio/page-31-1920.jpg 1920w"
+        sizes="(min-width: 1440px) 1440px, 100vw" width="1920" height="1369"
+        alt="임가연 디자인 포트폴리오 — 31 / 48페이지" loading="lazy" decoding="async">
+    </figure>
+    <figure class="portfolio-page" id="page-32" aria-label="포트폴리오 32페이지">
+      <img src="./images/portfolio/page-32-1920.jpg"
+        srcset="./images/portfolio/page-32-960.jpg 960w, ./images/portfolio/page-32-1920.jpg 1920w"
+        sizes="(min-width: 1440px) 1440px, 100vw" width="1920" height="1369"
+        alt="임가연 디자인 포트폴리오 — 32 / 48페이지" loading="lazy" decoding="async">
+    </figure>
+    <figure class="portfolio-page" id="page-33" aria-label="포트폴리오 33페이지">
+      <img src="./images/portfolio/page-33-1920.jpg"
+        srcset="./images/portfolio/page-33-960.jpg 960w, ./images/portfolio/page-33-1920.jpg 1920w"
+        sizes="(min-width: 1440px) 1440px, 100vw" width="1920" height="1369"
+        alt="임가연 디자인 포트폴리오 — 33 / 48페이지" loading="lazy" decoding="async">
+    </figure>
+    <figure class="portfolio-page" id="page-34" aria-label="포트폴리오 34페이지">
+      <img src="./images/portfolio/page-34-1920.jpg"
+        srcset="./images/portfolio/page-34-960.jpg 960w, ./images/portfolio/page-34-1920.jpg 1920w"
+        sizes="(min-width: 1440px) 1440px, 100vw" width="1920" height="1369"
+        alt="임가연 디자인 포트폴리오 — 34 / 48페이지" loading="lazy" decoding="async">
+    </figure>
+    <figure class="portfolio-page" id="page-35" aria-label="포트폴리오 35페이지">
+      <img src="./images/portfolio/page-35-1920.jpg"
+        srcset="./images/portfolio/page-35-960.jpg 960w, ./images/portfolio/page-35-1920.jpg 1920w"
+        sizes="(min-width: 1440px) 1440px, 100vw" width="1920" height="1369"
+        alt="임가연 디자인 포트폴리오 — 35 / 48페이지" loading="lazy" decoding="async">
+    </figure>
+    <figure class="portfolio-page" id="page-36" aria-label="포트폴리오 36페이지">
+      <img src="./images/portfolio/page-36-1920.jpg"
+        srcset="./images/portfolio/page-36-960.jpg 960w, ./images/portfolio/page-36-1920.jpg 1920w"
+        sizes="(min-width: 1440px) 1440px, 100vw" width="1920" height="1369"
+        alt="임가연 디자인 포트폴리오 — 36 / 48페이지" loading="lazy" decoding="async">
+    </figure>
+    <figure class="portfolio-page" id="page-37" aria-label="포트폴리오 37페이지">
+      <img src="./images/portfolio/page-37-1920.jpg"
+        srcset="./images/portfolio/page-37-960.jpg 960w, ./images/portfolio/page-37-1920.jpg 1920w"
+        sizes="(min-width: 1440px) 1440px, 100vw" width="1920" height="1369"
+        alt="임가연 디자인 포트폴리오 — 37 / 48페이지" loading="lazy" decoding="async">
+    </figure>
+    <figure class="portfolio-page" id="page-38" aria-label="포트폴리오 38페이지">
+      <img src="./images/portfolio/page-38-1920.jpg"
+        srcset="./images/portfolio/page-38-960.jpg 960w, ./images/portfolio/page-38-1920.jpg 1920w"
+        sizes="(min-width: 1440px) 1440px, 100vw" width="1920" height="1369"
+        alt="임가연 디자인 포트폴리오 — 38 / 48페이지" loading="lazy" decoding="async">
+    </figure>
+    <figure class="portfolio-page" id="page-39" aria-label="포트폴리오 39페이지">
+      <img src="./images/portfolio/page-39-1920.jpg"
+        srcset="./images/portfolio/page-39-960.jpg 960w, ./images/portfolio/page-39-1920.jpg 1920w"
+        sizes="(min-width: 1440px) 1440px, 100vw" width="1920" height="1369"
+        alt="임가연 디자인 포트폴리오 — 39 / 48페이지" loading="lazy" decoding="async">
+    </figure>
+    <figure class="portfolio-page" id="page-40" aria-label="포트폴리오 40페이지">
+      <img src="./images/portfolio/page-40-1920.jpg"
+        srcset="./images/portfolio/page-40-960.jpg 960w, ./images/portfolio/page-40-1920.jpg 1920w"
+        sizes="(min-width: 1440px) 1440px, 100vw" width="1920" height="1369"
+        alt="임가연 디자인 포트폴리오 — 40 / 48페이지" loading="lazy" decoding="async">
+    </figure>
+    <figure class="portfolio-page" id="page-41" aria-label="포트폴리오 41페이지">
+      <img src="./images/portfolio/page-41-1920.jpg"
+        srcset="./images/portfolio/page-41-960.jpg 960w, ./images/portfolio/page-41-1920.jpg 1920w"
+        sizes="(min-width: 1440px) 1440px, 100vw" width="1920" height="1369"
+        alt="임가연 디자인 포트폴리오 — 41 / 48페이지" loading="lazy" decoding="async">
+    </figure>
+    <figure class="portfolio-page" id="page-42" aria-label="포트폴리오 42페이지">
+      <img src="./images/portfolio/page-42-1920.jpg"
+        srcset="./images/portfolio/page-42-960.jpg 960w, ./images/portfolio/page-42-1920.jpg 1920w"
+        sizes="(min-width: 1440px) 1440px, 100vw" width="1920" height="1369"
+        alt="임가연 디자인 포트폴리오 — 42 / 48페이지" loading="lazy" decoding="async">
+    </figure>
+    <figure class="portfolio-page" id="page-43" aria-label="포트폴리오 43페이지">
+      <img src="./images/portfolio/page-43-1920.jpg"
+        srcset="./images/portfolio/page-43-960.jpg 960w, ./images/portfolio/page-43-1920.jpg 1920w"
+        sizes="(min-width: 1440px) 1440px, 100vw" width="1920" height="1369"
+        alt="임가연 디자인 포트폴리오 — 43 / 48페이지" loading="lazy" decoding="async">
+    </figure>
+    <figure class="portfolio-page" id="page-44" aria-label="포트폴리오 44페이지">
+      <img src="./images/portfolio/page-44-1920.jpg"
+        srcset="./images/portfolio/page-44-960.jpg 960w, ./images/portfolio/page-44-1920.jpg 1920w"
+        sizes="(min-width: 1440px) 1440px, 100vw" width="1920" height="1369"
+        alt="임가연 디자인 포트폴리오 — 44 / 48페이지" loading="lazy" decoding="async">
+    </figure>
+    <figure class="portfolio-page" id="page-45" aria-label="포트폴리오 45페이지">
+      <img src="./images/portfolio/page-45-1920.jpg"
+        srcset="./images/portfolio/page-45-960.jpg 960w, ./images/portfolio/page-45-1920.jpg 1920w"
+        sizes="(min-width: 1440px) 1440px, 100vw" width="1920" height="1369"
+        alt="임가연 디자인 포트폴리오 — 45 / 48페이지" loading="lazy" decoding="async">
+    </figure>
+    <figure class="portfolio-page" id="page-46" aria-label="포트폴리오 46페이지">
+      <img src="./images/portfolio/page-46-1920.jpg"
+        srcset="./images/portfolio/page-46-960.jpg 960w, ./images/portfolio/page-46-1920.jpg 1920w"
+        sizes="(min-width: 1440px) 1440px, 100vw" width="1920" height="1369"
+        alt="임가연 디자인 포트폴리오 — 46 / 48페이지" loading="lazy" decoding="async">
+    </figure>
+    <figure class="portfolio-page" id="page-47" aria-label="포트폴리오 47페이지">
+      <img src="./images/portfolio/page-47-1920.jpg"
+        srcset="./images/portfolio/page-47-960.jpg 960w, ./images/portfolio/page-47-1920.jpg 1920w"
+        sizes="(min-width: 1440px) 1440px, 100vw" width="1920" height="1369"
+        alt="임가연 디자인 포트폴리오 — 47 / 48페이지" loading="lazy" decoding="async">
+    </figure>
+    <figure class="portfolio-page" id="page-48" aria-label="포트폴리오 48페이지">
+      <img src="./images/portfolio/page-48-1920.jpg"
+        srcset="./images/portfolio/page-48-960.jpg 960w, ./images/portfolio/page-48-1920.jpg 1920w"
+        sizes="(min-width: 1440px) 1440px, 100vw" width="1920" height="1369"
+        alt="임가연 디자인 포트폴리오 — 48 / 48페이지" loading="lazy" decoding="async">
+    </figure>
+  </main>
+  <nav class="viewer-controls" aria-label="포트폴리오 페이지 이동">
+    <label class="sr-only" for="page-select">이동할 페이지</label>
+    <select id="page-select">
+        <option value="1">1 / 48</option>
+        <option value="2">2 / 48</option>
+        <option value="3">3 / 48</option>
+        <option value="4">4 / 48</option>
+        <option value="5">5 / 48</option>
+        <option value="6">6 / 48</option>
+        <option value="7">7 / 48</option>
+        <option value="8">8 / 48</option>
+        <option value="9">9 / 48</option>
+        <option value="10">10 / 48</option>
+        <option value="11">11 / 48</option>
+        <option value="12">12 / 48</option>
+        <option value="13">13 / 48</option>
+        <option value="14">14 / 48</option>
+        <option value="15">15 / 48</option>
+        <option value="16">16 / 48</option>
+        <option value="17">17 / 48</option>
+        <option value="18">18 / 48</option>
+        <option value="19">19 / 48</option>
+        <option value="20">20 / 48</option>
+        <option value="21">21 / 48</option>
+        <option value="22">22 / 48</option>
+        <option value="23">23 / 48</option>
+        <option value="24">24 / 48</option>
+        <option value="25">25 / 48</option>
+        <option value="26">26 / 48</option>
+        <option value="27">27 / 48</option>
+        <option value="28">28 / 48</option>
+        <option value="29">29 / 48</option>
+        <option value="30">30 / 48</option>
+        <option value="31">31 / 48</option>
+        <option value="32">32 / 48</option>
+        <option value="33">33 / 48</option>
+        <option value="34">34 / 48</option>
+        <option value="35">35 / 48</option>
+        <option value="36">36 / 48</option>
+        <option value="37">37 / 48</option>
+        <option value="38">38 / 48</option>
+        <option value="39">39 / 48</option>
+        <option value="40">40 / 48</option>
+        <option value="41">41 / 48</option>
+        <option value="42">42 / 48</option>
+        <option value="43">43 / 48</option>
+        <option value="44">44 / 48</option>
+        <option value="45">45 / 48</option>
+        <option value="46">46 / 48</option>
+        <option value="47">47 / 48</option>
+        <option value="48">48 / 48</option>
+    </select>
+    <span class="control-divider" aria-hidden="true"></span>
+    <a href="#top" aria-label="맨 위로 이동">맨 위로 <span aria-hidden="true">↑</span></a>
   </nav>
-</header>
-<main id="main" class="container">
-  <section id="jobs" class="overview" aria-label="마감 공고 및 내 활동">
-    <div class="deadline-area">
-      <div class="segment" role="group" aria-label="공고 정렬"><button data-sort="deadline" aria-pressed="true">마감임박</button><button data-sort="new" aria-pressed="false">신규등록</button></div>
-      <div id="deadline-cards" class="deadline-cards"></div>
-      <p id="search-status" class="search-status" role="status"></p>
-    </div>
-    <aside class="my-panel" aria-label="내 활동 예시">
-      <h2>MY</h2>
-      <div class="my-shortcuts"><button data-demo="알림">알림 <span aria-hidden="true">♧</span></button><button data-demo="스크랩">스크랩 <span aria-hidden="true">♧</span></button><button data-demo="쪽지">쪽지 <span aria-hidden="true">♧</span></button><button data-demo="자소서">자소서 <span aria-hidden="true">▤</span></button></div>
-      <div class="my-progress"><span>작성 중 <b>3</b></span><span>지원 완료 <b>10</b></span><span>면접 <b>4</b></span><span>대기/발표 <b>2</b></span></div>
-    </aside>
-  </section>
-  <section id="schedule" class="schedule" aria-label="지원 일정 예시 달력">
-    <div class="calendar-toolbar"><button id="calendar-toggle" aria-expanded="true" aria-controls="calendar-panel">달력 숨기기</button><button class="icon-button calendar-icon" aria-label="일정 달력 표시 전환" aria-controls="calendar-panel" aria-expanded="true"><svg viewBox="0 0 32 32" aria-hidden="true"><rect x="5" y="7" width="22" height="21" rx="3"/><path d="M10 3v8M22 3v8M5 15h22M10 20h2m4 0h2m4 0h1M10 24h2m4 0h2"/></svg></button></div>
-    <div id="calendar-panel" class="calendar-scroll" tabindex="0" aria-label="일정 달력, 작은 화면에서는 좌우로 스크롤">
-      <div class="calendar"><div class="weekdays" aria-hidden="true"><span>SUN</span><span>MON</span><span>TUE</span><span>WED</span><span>THU</span><span>FRI</span><span>SAT</span></div><div id="calendar-days" class="calendar-days"></div></div>
-    </div>
-  </section>
-  <section id="compare" class="compare-section" aria-labelledby="compare-title">
-    <div class="compare-toolbar"><h2 id="compare-title">맞춤 공고 비교하기</h2><label class="difference-toggle">차이점만 보기 <input id="difference-only" type="checkbox" role="switch"><span class="switch-track" aria-hidden="true"></span></label><button class="icon-button" id="add-compare" aria-label="비교 공고 추가">＋</button></div>
-    <div class="compare-layout">
-      <div id="saved-jobs" class="saved-jobs" aria-label="저장한 공고 예시"></div>
-      <div class="comparison-scroll" tabindex="0" aria-label="공고 비교 표, 작은 화면에서는 좌우로 스크롤">
-        <table class="comparison-table">
-          <caption class="sr-only">카카오톡, 토스, 쿠팡 공고 비교 예시</caption>
-          <thead><tr><th scope="col" class="row-label"><span class="sr-only">비교 항목</span></th><th scope="col"><div class="company-preview"><span class="company-logo kakao">카카오톡</span><p>카카오톡 하반기 공채</p></div></th><th scope="col"><div class="company-preview"><span class="company-logo toss">toss</span><p>토스 2026 신입사원</p></div></th><th scope="col"><div class="company-preview"><span class="company-logo coupang">coupang</span><p>쿠팡 마케팅 팀원</p></div></th></tr></thead>
-          <tbody id="comparison-rows"></tbody>
-          <tfoot><tr><td></td><td><button data-demo="자소서 쓰기">자소서 쓰기</button><button data-demo="지원하기">지원하기</button></td><td><button data-demo="자소서 쓰기">자소서 쓰기</button><button data-demo="지원하기">지원하기</button></td><td><button data-demo="자소서 쓰기">자소서 쓰기</button><button data-demo="지원하기">지원하기</button></td></tr></tfoot>
-        </table>
-      </div>
-    </div>
-    <div class="compare-bottom"><button id="reset-compare" class="icon-button" aria-label="비교 설정 초기화">↻</button><span id="compare-status" role="status"></span></div>
-  </section>
-</main>
-<footer class="page-footer container"><p>gyoun04 · UI 디자인 포트폴리오 <span>Figma 시안 구현 · 공고와 일정은 디자인 예시입니다.</span></p><a href="#top">맨 위로 ↑</a></footer>
-<div id="toast" class="toast" role="status" aria-live="polite" hidden></div>
-<noscript><p class="noscript-note">공고·달력·비교 예시를 표시하려면 JavaScript를 켜주세요.</p></noscript>
 </body>
 </html>
